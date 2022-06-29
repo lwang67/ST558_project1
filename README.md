@@ -3,7 +3,6 @@
 ## 6/22/2022
 
 ```{r}
-knitr::opts_chunk$set(echo = TRUE)
 ```
 
 write code using the rmarkdown::render function to output your .Rmd file to a file called README.md.
@@ -197,7 +196,7 @@ china_Total %>%
 
 <img width="773" alt="China" src="https://user-images.githubusercontent.com/106117423/176500067-7466c0d9-b958-4ef0-a665-c63c8492fc4e.png">
 
-From the above table, the mean of Daily_change confirmed Covid-19 cases in 2021 China is 53 , medium is 33, and var is 2236.
+From the above table, the mean of Daily_change confirmed Covid-19 cases in 2021 China is 52 , medium is 33, and var is 2236.
 
 ### Create numerical summaries for "Daily_change" variable of India_Total
 ```{r}
