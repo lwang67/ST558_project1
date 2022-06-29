@@ -3,12 +3,7 @@
 ## 6/22/2022
 
 
-```{r, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 write code using the rmarkdown::render function to output your .Rmd file to a file called README.md.
-
 ```{r, eval = FALSE}
 rmarkdown::render("../ST558_project1/README.md",output_format = "github_document")
 ```
