@@ -66,7 +66,6 @@ china_confirmed <-covid19_data_by_country("china","confirmed","2021/01/01","2021
 china_confirmed$Date <- format(as.POSIXct(china_confirmed$Date,format="%Y-%m-%dT%H:%M:%SZ"),format="%Y/%m/%d")
 head(china_confirmed)
 ```
-
 ![china_confirmed](https://user-images.githubusercontent.com/106117423/176498469-7a930997-6415-4c8e-934f-0dc9cbce2a81.png)
 
 ## "By Country Total" endpoint
@@ -120,6 +119,14 @@ head(china_Total)
 head(India_Total)
 head(jointdataset)
 ```
+China_Total data
+![china_Total](https://user-images.githubusercontent.com/106117423/176498670-7ade87b3-8d55-4562-bd62-6fb334fc03d5.png)
+
+India_Total data
+![India_Total](https://user-images.githubusercontent.com/106117423/176498681-904af652-84c1-46ab-ae25-9656fd662ca3.png)
+
+joindataset
+![jointdataset](https://user-images.githubusercontent.com/106117423/176498710-4014befc-05ec-404f-98f7-0dcfb715d479.png)
 
 # Exploratory Data Analysis (EDA)
 
@@ -155,6 +162,7 @@ India_Total<-India_Total %>%
 ```{r}
 table(china_Total$Daily_change_range, china_Total$month)
 ```
+![China_Daily_change_range v s month](https://user-images.githubusercontent.com/106117423/176498892-dd2be5ae-6eb1-49d8-ba37-72fbb521cc3a.png)
 
 From above table, 3 means there are 3 days with confirmed covid-19 cases in range (0,75] in January in China.
 
@@ -165,6 +173,8 @@ As we can see, the most Daily_change confirmed cases in the lowest range (0,75],
 ```{r}
 table(India_Total$Daily_change_range, India_Total$month)
 ```
+
+![India_Daily_change_range vs month](https://user-images.githubusercontent.com/106117423/176498905-8cc20277-da6e-48a6-9e3a-cd16087ea22f.png)
 
 From above table, 28 means there are 28 days with confirmed cases in range (0,8.28e+04] in Feb 2021 in India.
 
@@ -184,6 +194,7 @@ china_Total %>%
           var = var(Daily_change)
             )
 ```
+
 
 From the above table, the mean of Daily_change confirmed Covid-19 cases in 2021 China is 53 , medium is 33, and var is 2236.
 
@@ -231,6 +242,8 @@ size = 2, binwidth = 3)+
 labs(title = "Histogram of Daily_Change \nConfirmed Covid19 Cases of China in 2021")
 ```
 
+![Histogram](https://user-images.githubusercontent.com/106117423/176499018-015aa622-387c-403c-9a31-06e3edc975d1.png)
+
 From above histogram, the most Daily_change confirmed cases of China are in the range (0,75].
 
 ### Ceate Boxplot of Daily_Change Confirmed Covid19 Cases of Beijing and Shanghai in 2021
@@ -242,6 +255,7 @@ g + geom_boxplot(fill = "grey")+
 labs(title = "Boxplot of Daily_Change \nConfirmed Covid19 Cases of Beijing and Shanghai in 2021")+
   stat_summary(fun = mean, geom = "line", lwd = 1.5, aes(group = month, col = month))
 ```
+![boxplot](https://user-images.githubusercontent.com/106117423/176498996-9caf7516-475d-4746-86f9-c9867b457dd6.png)
 
 From above box plot, the Daily_Change Confirmed Covid19 Cases of Beijing is lower than Shanghai in 2021, and the slope of line with mean of Daily_Change Confirmed Covid_19 Cases of Beijing VS Shanghai grouped-by month is increased.
 
@@ -252,5 +266,7 @@ g <- ggplot(jointdataset, aes(x = Confirmed_Cases, y = Deaths_Cases))
 g + geom_point(color="blue")+
   labs(title = "Scatter Plot of Confirmed_Cases \n Vs. Deaths_Cases of India in 2021")
 ```
+
+![scatter plot](https://user-images.githubusercontent.com/106117423/176499043-933c8401-37c7-466f-b4a5-04df875f1192.png)
 
 From above scatter plot, more confirmed_case means more deaths_cases of India in 2021. This two variables are positive correlation.
