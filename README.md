@@ -67,6 +67,7 @@ china_confirmed$Date <- format(as.POSIXct(china_confirmed$Date,format="%Y-%m-%dT
 head(china_confirmed)
 ```
 
+![china_confirmed](https://user-images.githubusercontent.com/106117423/176498469-7a930997-6415-4c8e-934f-0dc9cbce2a81.png)
 
 ## "By Country Total" endpoint
 
