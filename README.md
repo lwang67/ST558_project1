@@ -7,7 +7,6 @@ write code using the rmarkdown::render function to output your .Rmd file to a fi
 ```{r, eval = FALSE}
 
 rmarkdown::render("../ST558_project1/README.md",output_format = "github_document")
-
 ```
 
 # Goal
