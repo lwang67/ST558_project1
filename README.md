@@ -162,11 +162,11 @@ India_Total<-India_Total %>%
 ```{r}
 table(china_Total$Daily_change_range, china_Total$month)
 ```
-![China_Daily_change_range v s month](https://user-images.githubusercontent.com/106117423/176498892-dd2be5ae-6eb1-49d8-ba37-72fbb521cc3a.png)
+<img width="746" alt="China_table" src="https://user-images.githubusercontent.com/106117423/176528217-5a264e4d-a520-4c6e-90ba-f4fd4e2216e3.png">
 
 From above table, 3 means there are 3 days with confirmed covid-19 cases in range (0,75] in January in China.
 
-As we can see, the most Daily_change confirmed cases in the lowest range (0,75], and the range (75,149] is just in July to December, and the other higher Daily_change_range of confirmed cases is just in December.
+As we can see, the most Daily_change confirmed cases in the lowest range (0,75], and the range (75,149] is just in January, July to December, and the other higher Daily_change_range of confirmed cases is just in January and December.
 
 ### Create a contingency table India_Total dataset: Daily_change_range vs month
 
@@ -174,7 +174,7 @@ As we can see, the most Daily_change confirmed cases in the lowest range (0,75],
 table(India_Total$Daily_change_range, India_Total$month)
 ```
 
-![India_Daily_change_range vs month](https://user-images.githubusercontent.com/106117423/176498905-8cc20277-da6e-48a6-9e3a-cd16087ea22f.png)
+<img width="855" alt="India_table" src="https://user-images.githubusercontent.com/106117423/176528290-ec44c96a-ee6a-48af-98d9-0b0db5d795f5.png">
 
 From above table, 28 means there are 28 days with confirmed cases in range (0,8.28e+04] in Feb 2021 in India.
 
