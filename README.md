@@ -2,16 +2,12 @@
 ## Li Wang
 ## 6/22/2022
 
-I write code using the rmarkdown::render function to output your .Rmd file to a file called README.md.
-
 ```{r, eval = FALSE}
 rmarkdown::render("../ST558_project1/README.md",output_format = "github_document")
-
 ```
 
 
 # Goal
-
 My goal with this project is to create a vignette about contacting the [COVID19 API]
 (https://documenter.getpostman.com/view/10808728/SzS8rjbc) using functions I create to query, parse, return well-structured data, and then I will use the functions to obtain data from the API and do some exploratory data analysis.
 
@@ -210,7 +206,7 @@ From the above table, the mean of Daily_change confirmed Covid-19 cases in 2021 
 
 ## Create plots
 
-### Create Bar Plot of Daily_Change \nConfirmed Covid19 Cases of China in 2021
+### Create Bar Plot of Daily_Change Confirmed Covid19 Cases of China in 2021
 
 ```{r}
 china_Total <- china_Total %>% drop_na(Daily_change_range)
@@ -223,7 +219,7 @@ labs(title = "Bar Plot of Daily_Change \nConfirmed Covid19 Cases of China in 202
 
 From above bar plot, the most Daily_change confirmed cases of China are in the range (0,75], and the least Daily_change confirmed cases of china are in the range (297,373]. It's decreasing trend.
 
-### Create Bar Plot of Daily_Change \nConfirmed Covid19 Cases of India in 2021
+### Create Bar Plot of Daily_Change Confirmed Covid19 Cases of India in 2021
 
 ```{r}
 India_Total <- India_Total %>% drop_na(Daily_change_range)
@@ -238,7 +234,7 @@ theme(axis.text.x = element_text(angle = 45,size = 5))
 From above bar plot, the most Daily_change confirmed cases of India are in the range (0,8.28e+04], and the least Daily_change confirmed cases of India are in the range (1.66e+05,2.49e+05].
 
 
-### Create histogram of Daily_Change \nConfirmed Covid19 Cases of China in 2021
+### Create histogram of Daily_Change Confirmed Covid19 Cases of China in 2021
 ```{r}
 g <- ggplot(data = china_Total, aes(x = Daily_change))
 g + geom_histogram(color = "blue", fill = "blue",
@@ -263,7 +259,7 @@ labs(title = "Boxplot of Daily_Change \nConfirmed Covid19 Cases of Beijing and S
 
 From above box plot, the Daily_Change Confirmed Covid19 Cases of Beijing is lower than Shanghai in 2021, and the slope of line with mean of Daily_Change Confirmed Covid_19 Cases of Beijing VS Shanghai grouped-by month is increased.
 
-### Create Scatter Plot of Confirmed_Cases \n Vs. Deaths_Cases of India in 2021
+### Create Scatter Plot of Confirmed_Cases Vs. Deaths_Cases of India in 2021
 
 ```{r}
 g <- ggplot(jointdataset, aes(x = Confirmed_Cases, y = Deaths_Cases))
@@ -273,4 +269,4 @@ g + geom_point(color="blue")+
 
 ![scatter plot](https://user-images.githubusercontent.com/106117423/176499043-933c8401-37c7-466f-b4a5-04df875f1192.png)
 
-From above scatter plot, more confirmed_case means more deaths_cases of India in 2021. This two variables are positive correlation.
+From above scatter plot, more confirmed_cases means more deaths_cases of India in 2021. This two variables are positive correlation.
