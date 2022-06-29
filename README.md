@@ -195,6 +195,7 @@ china_Total %>%
             )
 ```
 
+<img width="773" alt="China" src="https://user-images.githubusercontent.com/106117423/176500067-7466c0d9-b958-4ef0-a665-c63c8492fc4e.png">
 
 From the above table, the mean of Daily_change confirmed Covid-19 cases in 2021 China is 53 , medium is 33, and var is 2236.
 
@@ -205,6 +206,8 @@ India_Total %>%
   group_by(month)%>% 
   summarise(mean = mean(Daily_change), median = median(Daily_change), var = var(Daily_change))
 ```
+
+<img width="655" alt="India summarise" src="https://user-images.githubusercontent.com/106117423/176500080-7597eaf7-c25c-45f3-8c8f-18904303c24f.png">
 
 From the above table, the mean of Daily_change confirmed Covid-19 cases in 2021 India is 67461 , medium is 29653, and var is 9671291166.
 
@@ -219,6 +222,8 @@ g + geom_bar(color = "blue", fill = "blue")+
 labs(title = "Bar Plot of Daily_Change \nConfirmed Covid19 Cases of China in 2021")
 ```
 
+![Bar plot of china](https://user-images.githubusercontent.com/106117423/176500091-bd5f4b37-9fde-4cfa-bdf0-fff3de35440a.png)
+
 From above bar plot, the most Daily_change confirmed cases of China are in the range (0,75], and the least Daily_change confirmed cases of china are in the range (297,373]. It's decreasing trend.
 
 ### Create Bar Plot of Daily_Change \nConfirmed Covid19 Cases of India in 2021
@@ -230,6 +235,8 @@ g + geom_bar(color = "blue", fill = "blue")+
 labs(title = "Bar Plot of Daily_Change \nConfirmed Covid19 Cases of India in 2021")+
 theme(axis.text.x = element_text(angle = 45,size = 5))
 ```
+
+![Bar plot of India](https://user-images.githubusercontent.com/106117423/176500098-5a759e8a-a02b-455c-9ad0-12c082efe35e.png)
 
 From above bar plot, the most Daily_change confirmed cases of India are in the range (0,8.28e+04], and the least Daily_change confirmed cases of India are in the range (1.66e+05,2.49e+05].
 
