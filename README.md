@@ -186,27 +186,26 @@ china_Total %>%
   drop_na(Daily_change)%>%
   group_by(month) %>%
   summarise(
-          mean = mean(Daily_change),
-          median = median(Daily_change),
-          var = var(Daily_change)
+          mean = mean(Daily_change)
             )
 ```
 
-<img width="773" alt="China" src="https://user-images.githubusercontent.com/106117423/176500067-7466c0d9-b958-4ef0-a665-c63c8492fc4e.png">
+![china_month_summary](https://user-images.githubusercontent.com/106117423/176683385-4e22f64d-5fd3-4b5e-bd8e-f93c4e020481.JPG)
 
-From the above table, the mean of Daily_change confirmed Covid-19 cases in 2021 China is 52 , medium is 33, and var is 2236.
+From the above table, the largest of the mean of Daily_change confirmed Covid-19 cases in 2021 China is 135 in January, and the smallest is 17 in May.
 
 ### Create numerical summaries for "Daily_change" variable of India_Total
 ```{r}
 India_Total %>% 
   drop_na(Daily_change)%>% 
   group_by(month)%>% 
-  summarise(mean = mean(Daily_change), median = median(Daily_change), var = var(Daily_change))
+  summarise(mean = mean(Daily_change)
+  )
 ```
 
-<img width="655" alt="India summarise" src="https://user-images.githubusercontent.com/106117423/176500080-7597eaf7-c25c-45f3-8c8f-18904303c24f.png">
+![India_month_summary](https://user-images.githubusercontent.com/106117423/176683401-ec3a2b37-07d5-4b71-8e91-2e1f6a0a53e2.JPG)
 
-From the above table, the mean of Daily_change confirmed Covid-19 cases in 2021 India is 67461 , medium is 29653, and var is 9671291166.
+From the above table, the largest mean of Daily_change confirmed Covid-19 cases in 2021 India is 290648,and the smallest is 9131 in December.
 
 ## Create plots
 
