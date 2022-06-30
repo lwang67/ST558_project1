@@ -319,8 +319,19 @@ china_Total %>%
             )
 ```
 
-    ##    mean 
-    ## 1 52.25     
+    ## month   mean 
+    ## 1       134.66667
+    ## 2       32.21429
+    ## 3       24.74194
+    ## 4       25.40000
+    ## 5       16.77419
+    ## 6       25.16667
+    ## 7       41.32258
+    ## 8       65.25806
+    ## 9       45.90000
+    ## 10      39.22581
+    ## 11      55.70000
+    ## 12      119.51613
 
 From the above table, the largest of the mean of Daily_change confirmed Covid-19 cases in 2021 China is 135 in January, and the smallest is 17 in May.
 
@@ -333,8 +344,19 @@ India_Total %>%
   summarise(mean = mean(Daily_change))
 ```
 
-    ##       mean  
-    ## 1 67460.96 
+    ## month   mean 
+    ## 1       15580.069
+    ## 2       12665.393
+    ## 3       35787.871
+    ## 4       231443.467
+    ## 5       290647.581
+    ## 6       74553.000
+    ## 7       40135.161
+    ## 8       37258.742
+    ## 9       31862.067
+    ## 10      16745.387
+    ## 11      10365.400
+    ## 12      9131.138
 
 From the above table, the largest mean of Daily_change confirmed Covid-19 cases in 2021 India is 290648,and the smallest is 9131 in December.
 
