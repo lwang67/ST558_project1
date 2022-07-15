@@ -2,11 +2,6 @@
 ## Li Wang
 ## 6/22/2022
 
-write code using the rmarkdown::render function to output your .Rmd file to a file called README.md.
-
-```{r, eval = FALSE}
-rmarkdown::render("../ST558_project1/README.md",output_format = "github_document")
-```
 
 # Goal
 My goal with this project is to create a vignette about contacting the [COVID19 API]
