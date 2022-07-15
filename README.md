@@ -8,9 +8,6 @@ write code using the rmarkdown::render function to output your .Rmd file to a fi
 rmarkdown::render("../ST558_project1/README.md",output_format = "github_document")
 ```
 
-```{r}
-```
-
 # Goal
 My goal with this project is to create a vignette about contacting the [COVID19 API]
 (https://documenter.getpostman.com/view/10808728/SzS8rjbc) using functions I create to query, parse, return well-structured data, and then I will use the functions to obtain data from the API and do some exploratory data analysis.
