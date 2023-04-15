@@ -1,4 +1,4 @@
-# ST558_project1
+# COVID-19 Data Visualization in R
 ## Li Wang
 ## 6/22/2022
 
